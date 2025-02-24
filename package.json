@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "common-gulp-config": "^1.0.30",
+    "common-sass-config": "^1.0.7"
+  }
+}
