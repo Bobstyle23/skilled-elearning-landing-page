@@ -19,3 +19,14 @@
     @include typography(1.6rem, 700, 1.75);
   }
 }
+
+@include respond-to($breakpoint-tablets) {
+  .header {
+    padding: $spacing-24 $spacing-44;
+
+    &__btn {
+      width: 15.2rem;
+      @include typography(1.8rem, 700, 1.5);
+    }
+  }
+}
