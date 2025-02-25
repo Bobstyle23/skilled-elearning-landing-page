@@ -25,3 +25,26 @@
     @include typography(1.6rem, 700, 1.75);
   }
 }
+
+@include respond-to($breakpoint-tablets) {
+  .hero {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 0 0 $spacing-44;
+    gap: 0 $spacing-24;
+
+    &__btn {
+      width: 15.2rem;
+      @include typography(1.8rem, 700, 1.5);
+    }
+
+    &__image {
+      img {
+        position: relative;
+        bottom: 4.15rem;
+        width: 50rem;
+        height: 52.8rem;
+        object-fit: cover;
+      }
+    }
+  }
+}
