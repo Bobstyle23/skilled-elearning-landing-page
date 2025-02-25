@@ -22,7 +22,50 @@
       </a>
       <a href="#" class="btn btn--black header__btn">Get Started</a>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__info">
+          <h1 class="hero__heading">
+            Maximize skill, <br />
+            minimize budget
+          </h1>
+          <p class="hero__description">
+            Our modern courses across a range of in-demand skills will give you
+            the knowledge you need to live the life you want.
+          </p>
+          <a href="#" class="btn btn--orange hero__btn">Get Started</a>
+        </div>
+
+        <picture class="hero__image">
+          <source
+            srcset="
+              ./img/image-hero-desktop@3x.png 3x,
+              ./img/image-hero-desktop@2x.png 2x,
+              ./img/image-hero-desktop.svg
+            "
+            type="image/webp"
+            media="(min-width: 64em)"
+          />
+          <source
+            srcset="
+              ./img/image-hero-tablet@3x.png 3x,
+              ./img/image-hero-tablet@2x.png 2x,
+              ./img/image-hero-tablet.svg
+            "
+            type="image/webp"
+            media="(min-width: 48em)"
+          />
+          <img
+            src="./img/image-hero-mobile.svg"
+            srcset="
+              ./img/image-hero-mobile@3x.png 3x,
+              ./img/image-hero-mobile@2x.png 2x
+            "
+            alt="Image of woman holding a cup of hot tea wrapped with statistics of current number of members and course hours"
+          />
+        </picture>
+      </section>
+    </main>
 
     <script src="./js/index.bundle.js" defer></script>
   </body>

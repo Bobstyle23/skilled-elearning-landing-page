@@ -21,3 +21,11 @@
   padding-inline: 3.2rem;
   transition: all 0.2s ease-in-out;
 }
+
+%button-style-mobile {
+  @extend %button-style;
+  width: 14rem;
+  height: 4.8rem;
+  padding-block: 1rem;
+  padding-inline: 2.4rem;
+}

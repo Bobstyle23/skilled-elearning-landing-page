@@ -1,0 +1,27 @@
+.hero {
+  @extend %grid;
+  padding: $spacing-64 $spacing-20;
+  row-gap: $spacing-48;
+
+  &__info {
+    @extend %flexbox;
+    align-items: flex-start;
+    gap: $spacing-24;
+  }
+
+  &__heading {
+    @extend %text-preset-2;
+    color: $color-blue-900;
+  }
+
+  &__description {
+    @extend %text-preset-5;
+    color: $color-grey;
+    margin-block-end: $spacing-16;
+  }
+
+  &__btn {
+    @extend %button-style-mobile;
+    @include typography(1.6rem, 700, 1.75);
+  }
+}

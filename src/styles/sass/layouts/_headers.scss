@@ -11,9 +11,7 @@
   }
 
   &__btn {
-    width: 14rem;
-    height: 4.8rem;
-    padding: 1rem $spacing-24;
+   @extend %button-style-mobile;
     @include typography(1.6rem, 700, 1.75);
   }
 }
