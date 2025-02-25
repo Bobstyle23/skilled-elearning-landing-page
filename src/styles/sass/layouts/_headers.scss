@@ -1,0 +1,21 @@
+.header {
+  @extend %flexbox;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  max-width: 112rem;
+  margin-inline: auto;
+  padding: $spacing-16 $spacing-20;
+  margin-block-end: $spacing-64;
+
+  &__logo {
+    width: 8rem;
+    height: 2rem;
+  }
+
+  &__btn {
+    width: 14rem;
+    height: 4.8rem;
+    padding: 1rem $spacing-24;
+    @include typography(1.6rem, 700, 1.75);
+  }
+}
