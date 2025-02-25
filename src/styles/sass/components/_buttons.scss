@@ -1,0 +1,36 @@
+.btn {
+  @extend %button-style;
+  color: $color-white;
+
+  &--black {
+    background-color: $color-blue-900;
+
+    &:hover {
+      background-color: $color-blue-600;
+    }
+  }
+
+  &--orange {
+    background: $color-gradient-pink;
+  }
+
+  &--purple {
+    background: $color-gradient-purple;
+  }
+
+  &--orange,
+  &--purple {
+    &:hover {
+      opacity: 50%;
+    }
+  }
+
+  &__link {
+    background-color: transparent;
+    color: $color-pink-600;
+
+    &:hover {
+      color: $color-pink-300;
+    }
+  }
+}

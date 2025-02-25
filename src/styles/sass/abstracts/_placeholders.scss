@@ -11,3 +11,13 @@
   align-items: center;
   justify-items: center;
 }
+
+%button-style {
+  @extend %text-preset-7;
+  width: 16.8rem;
+  height: 5.9rem;
+  border-radius: 2.8rem;
+  padding-block: 1.6rem;
+  padding-inline: 3.2rem;
+  transition: all 0.2s ease-in-out;
+}

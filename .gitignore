@@ -1,6 +1,4 @@
 node_modules
-gulp
-build
 gulpfile.js
 webpack.config.js
 

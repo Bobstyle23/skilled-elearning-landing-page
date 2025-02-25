@@ -1,3 +1,37 @@
 $breakpoint-tablets: "(min-width: 48em)";
 $breakpoint-large-tablets: "(min-width: 64em)";
 $breakpoint-desktops: "(min-width: 75em)";
+
+$color-blue-900: #13183f;
+$color-blue-600: #666ca3;
+$color-pink-600: #f74780;
+$color-pink-300: #ffa7c3;
+$color-grey: #83869a;
+$color-white: #fff;
+
+$color-gradient-pink: linear-gradient(
+  to bottom,
+  rgba(255, 111, 72, 1) 0%,
+  rgba(240, 42, 166, 1) 100%,
+);
+
+$color-gradient-purple: linear-gradient(
+  180deg,
+  rgba(72, 81, 255, 1) 0%,
+  rgba(240, 42, 166, 1) 100%
+);
+
+$spacing-144: 14.4rem;
+$spacing-128: 12.8rem;
+$spacing-80: 8rem;
+$spacing-64: 6.4rem;
+$spacing-56: 5.6rem;
+$spacing-48: 4.8rem;
+$spacing-44: 4.4rem;
+$spacing-40: 4rem;
+$spacing-32: 3.2rem;
+$spacing-24: 2.4rem;
+$spacing-20: 2rem;
+$spacing-16: 1.6rem;
+$spacing-12: 1.2rem;
+$spacing-8: 0.8rem;

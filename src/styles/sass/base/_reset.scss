@@ -39,6 +39,7 @@ p {
 }
 
 a {
+  display: inline-block;
   &:visited,
   &:link,
   &:active,
