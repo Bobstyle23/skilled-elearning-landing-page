@@ -48,3 +48,17 @@
     }
   }
 }
+
+@include respond-to($breakpoint-desktops) {
+  .hero {
+    padding-inline-start: 0;
+    margin-inline-start: 16rem;
+
+    &__image {
+      img {
+        width: 54.4rem;
+        height: 56rem;
+      }
+    }
+  }
+}
