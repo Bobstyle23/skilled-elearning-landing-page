@@ -32,6 +32,10 @@
     padding: 0 0 0 $spacing-44;
     gap: 0 $spacing-24;
 
+    &__info {
+      justify-self: start;
+    }
+
     &__btn {
       width: 15.2rem;
       @include typography(1.8rem, 700, 1.5);
@@ -49,16 +53,39 @@
   }
 }
 
+@include respond-to($breakpoint-large-tablets) {
+  .hero {
+    column-gap: $spacing-32;
+
+    &__heading {
+      @include typography(5.6rem, 800, 1.2);
+    }
+
+    &__description {
+      max-width: 45.7rem;
+    }
+  }
+}
+
 @include respond-to($breakpoint-desktops) {
   .hero {
-    padding-inline: 0;
+    padding-inline-start: 0;
     padding-block: $spacing-64;
-    margin-inline-start: 16rem;
+
+    &__btn {
+      width: 16.8rem;
+      height: 5.9rem;
+      padding: $spacing-16 $spacing-32;
+    }
 
     &__image {
       img {
-        width: 54.4rem;
-        height: 56rem;
+        width: auto;
+        height: auto;
+        position: static;
+        max-width: none;
+        margin-right: -18rem;
+        margin-top: -17rem;
       }
     }
   }
