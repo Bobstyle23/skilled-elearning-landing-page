@@ -1,0 +1,54 @@
+.courses {
+  @extend %grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(32.8rem, 100%), 1fr));
+  row-gap: calc($spacing-32 + 2.8rem);
+  margin-block-start: $spacing-64;
+  margin-block-end: $spacing-80;
+  margin-inline: $spacing-20;
+
+  .course {
+    @extend %flexbox;
+    align-items: flex-start;
+    gap: $spacing-24;
+    padding-inline: $spacing-32;
+    padding-block-start: $spacing-64;
+    padding-block-end: $spacing-40;
+    background-color: $color-white;
+    border-radius: 1.5rem;
+    position: relative;
+
+    &--ad {
+      padding: $spacing-32;
+      background: $color-gradient-pink;
+
+      h2 {
+        @extend %text-preset-3;
+        font-size: 2.4rem;
+        color: $color-white;
+      }
+    }
+
+    &__heading {
+      @extend %text-preset-4;
+      font-size: 2rem;
+      color: $color-blue-900;
+    }
+
+    &__description {
+      @extend %text-preset-6;
+      color: $color-grey;
+    }
+
+    &__link {
+      padding: 0;
+      width: auto;
+      height: auto;
+    }
+
+    &__icon {
+      position: absolute;
+      top: -2.8rem;
+      left: 3.2rem;
+    }
+  }
+}

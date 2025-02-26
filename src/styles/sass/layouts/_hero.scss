@@ -1,6 +1,6 @@
 .hero {
   @extend %grid;
-  padding: $spacing-64 $spacing-20;
+  margin: $spacing-64 $spacing-20;
   row-gap: $spacing-48;
 
   &__info {
