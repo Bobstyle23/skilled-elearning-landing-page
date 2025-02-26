@@ -4,6 +4,8 @@
   justify-content: space-between;
   max-width: 112rem;
   margin: $spacing-16 $spacing-20;
+  position: relative;
+  z-index: 1;
 
   &__logo {
     width: 8rem;
@@ -11,7 +13,7 @@
   }
 
   &__btn {
-   @extend %button-style-mobile;
+    @extend %button-style-mobile;
     @include typography(1.6rem, 700, 1.75);
   }
 }
