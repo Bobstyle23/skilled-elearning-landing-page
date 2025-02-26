@@ -51,7 +51,8 @@
 
 @include respond-to($breakpoint-desktops) {
   .hero {
-    padding-inline-start: 0;
+    padding-inline: 0;
+    padding-block: $spacing-64;
     margin-inline-start: 16rem;
 
     &__image {
