@@ -1,5 +1,5 @@
 @mixin respond-to($breakpoint) {
-  @media #{$breakpoint} and (orientation: landscape) {
+  @media #{$breakpoint} {
     @content;
   }
 }
