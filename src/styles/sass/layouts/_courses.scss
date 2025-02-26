@@ -18,6 +18,9 @@
     border-radius: 1.5rem;
     position: relative;
 
+    box-shadow: 0 2.5rem 5rem 0 rgba($color: #ccc, $alpha: 0.4);
+    filter: drop-shadow(0 2.5rem 5rem 0 #06168d);
+
     &--ad {
       padding: $spacing-32;
       background: $color-gradient-pink;
@@ -37,7 +40,9 @@
 
     &__description {
       @extend %text-preset-6;
+      font-weight: 500;
       color: $color-grey;
+      text-wrap: auto;
     }
 
     &__link {
@@ -71,5 +76,36 @@
   .courses {
     margin-inline: $spacing-44;
     margin-block-end: $spacing-144;
+
+    .course {
+      min-height: 32.2rem;
+      &__description {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+@include respond-to($breakpoint-desktops) {
+  .courses {
+    margin-inline: auto;
+    row-gap: calc(5.6rem + 2.8rem);
+    column-gap: $spacing-32;
+
+    .course {
+      max-width: 35.2rem;
+      justify-content: space-between;
+
+      &--ad {
+        h2 {
+          font-size: 3.2rem;
+          text-wrap: auto;
+        }
+      }
+
+      &__heading {
+        font-size: 2.4rem;
+      }
+    }
   }
 }
