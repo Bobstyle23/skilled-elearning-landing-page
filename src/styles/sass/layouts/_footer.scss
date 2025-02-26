@@ -1,0 +1,49 @@
+.footer {
+  max-width: 144rem;
+  background-color: $color-blue-900;
+  padding: $spacing-24 $spacing-20;
+
+  &__content {
+    @extend %flexbox;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 112rem;
+    margin-inline: auto;
+  }
+
+  &__logo {
+    width: 8rem;
+    height: 2rem;
+  }
+
+  &__btn {
+    @extend %button-style-mobile;
+    @include typography(1.6rem, 700, 1.75);
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .footer {
+    padding-inline: $spacing-44;
+
+    &__btn {
+      width: 15.2rem;
+      @include typography(1.8rem, 700, 1.5);
+    }
+  }
+}
+
+@include respond-to($breakpoint-desktops) {
+  .footer {
+    &__logo {
+      width: auto;
+      height: auto;
+    }
+
+    &__btn {
+      width: 16.8rem;
+      height: 5.9rem;
+      padding: $spacing-16 $spacing-32;
+    }
+  }
+}

@@ -12,14 +12,14 @@
 
   &--orange {
     background: $color-gradient-pink;
+    &:hover {
+      opacity: 50%;
+    }
   }
 
   &--purple {
     background: $color-gradient-purple;
-  }
 
-  &--orange,
-  &--purple {
     &:hover {
       opacity: 50%;
     }
