@@ -2,6 +2,7 @@
   @extend %grid;
   grid-template-columns: repeat(auto-fill, minmax(min(32.8rem, 100%), 1fr));
   row-gap: calc($spacing-32 + 2.8rem);
+  column-gap: $spacing-24;
   margin-block-start: $spacing-64;
   margin-block-end: $spacing-80;
   margin-inline: $spacing-20;
@@ -50,5 +51,25 @@
       top: -2.8rem;
       left: 3.2rem;
     }
+  }
+}
+
+@include respond-to("(min-width: 45em)") {
+  .courses {
+    .course {
+      &--ad {
+        padding-block-start: $spacing-64;
+        padding-block-end: $spacing-40;
+        align-self: stretch;
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+@include respond-to($breakpoint-tablets) {
+  .courses {
+    margin-inline: $spacing-44;
+    margin-block-end: $spacing-144;
   }
 }
