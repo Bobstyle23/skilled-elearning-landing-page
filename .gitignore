@@ -3,4 +3,6 @@ gulpfile.js
 webpack.config.js
 build
 gulp
+package.json
+yarn.lock
 
