@@ -1,16 +1,26 @@
 .courses {
   @extend %grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(32.8rem, 100%), 1fr));
-  row-gap: calc($spacing-32 + 2.8rem);
-  column-gap: $spacing-24;
+  grid-template: repeat(3, auto) / repeat(
+      auto-fill,
+      minmax(min(32.8rem, 100%), 1fr)
+    );
+  gap: calc($spacing-32 + 2.8rem) $spacing-24;
   margin-block-start: $spacing-64;
   margin-block-end: $spacing-80;
   margin-inline: $spacing-20;
 
   .course {
-    @extend %flexbox;
-    align-items: flex-start;
-    gap: $spacing-24;
+    @extend %grid;
+    grid-template: subgrid / subgrid;
+    grid-row: span 3;
+    place-items: start;
+    row-gap: $spacing-24;
+
+    &:first-child {
+      @extend %flexbox;
+      justify-content: flex-start;
+    }
+
     padding-inline: $spacing-32;
     padding-block-start: $spacing-64;
     padding-block-end: $spacing-40;
@@ -88,12 +98,10 @@
 @include respond-to($breakpoint-desktops) {
   .courses {
     margin-inline: auto;
-    row-gap: calc(5.6rem + 2.8rem);
-    column-gap: $spacing-32;
+    gap: calc(5.6rem + 2.8rem) $spacing-32;
 
     .course {
       max-width: 35.2rem;
-      justify-content: space-between;
 
       &--ad {
         h2 {
