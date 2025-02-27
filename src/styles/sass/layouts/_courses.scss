@@ -6,8 +6,24 @@
     );
   gap: calc($spacing-32 + 2.8rem) $spacing-24;
   margin-block-start: $spacing-64;
-  margin-block-end: $spacing-80;
+  padding-block-end: $spacing-80;
   margin-inline: $spacing-20;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(240, 241, 255, 1) 100%
+      )
+      no-repeat;
+  }
 
   .course {
     @extend %grid;
@@ -27,7 +43,6 @@
     background-color: $color-white;
     border-radius: 1.5rem;
     position: relative;
-
     box-shadow: 0 2.5rem 5rem 0 rgba($color: #ccc, $alpha: 0.4);
 
     &--ad {
@@ -84,7 +99,7 @@
 @include respond-to($breakpoint-tablets) {
   .courses {
     margin-inline: $spacing-44;
-    margin-block-end: $spacing-144;
+    padding-block-end: $spacing-144;
 
     .course {
       min-height: 32.2rem;
