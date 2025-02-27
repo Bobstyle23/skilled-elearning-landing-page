@@ -21,7 +21,7 @@
     background: $color-gradient-purple;
 
     &:hover {
-      opacity: 50%;
+      background: linear-gradient(to bottom, $color-blue-600, $color-pink-300);
     }
   }
 
