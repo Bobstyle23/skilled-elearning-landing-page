@@ -43,6 +43,7 @@
     background-color: $color-white;
     border-radius: 1.5rem;
     position: relative;
+    box-shadow: 0 0 5rem 0 rgba($color: #ccc, $alpha: 0.4);
 
     &--ad {
       padding: $spacing-32;
